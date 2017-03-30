@@ -77,9 +77,9 @@ app.get('/slack', function(req, res){
 });
 
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
 	let text = req.body.text;
 
-	var phrase = phrasees[Math.floor(Math.random() * words.length)];
+	var phrase = phrasees[Math.floor(Math.random() * phrasees.length)];
 	res.send(phrase)
 });
