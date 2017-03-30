@@ -83,3 +83,10 @@ app.get('/', (req, res) => {
 	var phrase = phrasees[Math.floor(Math.random() * phrasees.length)];
 	res.send(phrase)
 });
+
+app.post('/', (req, res) => {
+	let text = req.body.text;
+
+	var phrase = phrasees[Math.floor(Math.random() * phrasees.length)];
+	res.send(phrase)
+});
