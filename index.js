@@ -81,12 +81,20 @@ app.get('/', (req, res) => {
 	let text = req.body.text;
 
 	var phrase = phrasees[Math.floor(Math.random() * phrasees.length)];
-	res.replyPublic(phrase)
+	let data = {
+		response_type: 'public',
+		text: phrase
+	}
+	res.send(data);
 });
 
 app.post('/', (req, res) => {
 	let text = req.body.text;
 
 	var phrase = phrasees[Math.floor(Math.random() * phrasees.length)];
-	res.replyPublic(phrase)
+	let data = {
+		response_type: 'public',
+		text: phrase
+	}
+	res.send(data);
 });
