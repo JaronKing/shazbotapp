@@ -144,4 +144,5 @@ var gifs = [
 	"https://media.giphy.com/media/d7ocRlySc8dxe/giphy.gif",
 	"http://i2.cdn.turner.com/money/dam/assets/150529155406-facebook-gif-7-custom-1.gif",
 	"http://stream1.gifsoup.com/view3/2176641/shirley-temple-angry-o.gif",
+	"https://media.giphy.com/media/wVcNP3TnXbl84/giphy.gif",
 	];
