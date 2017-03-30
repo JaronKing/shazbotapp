@@ -109,9 +109,13 @@ app.post('/', (req, res) => {
 	let text = req.body.text;
 
 	var phrase = phrases[Math.floor(Math.random() * phrases.length)];
+	var gif = gifs[Math.floor(Math.random() * gifs.length)];
 	let data = {
 		response_type: 'in_channel',
-		text: phrase
-	}
+		text: phrase,
+		attachments:[{
+			image_url: gif
+		}]
+	};
 	res.send(data);
 });
