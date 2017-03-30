@@ -82,7 +82,7 @@ app.get('/', (req, res) => {
 
 	var phrase = phrasees[Math.floor(Math.random() * phrasees.length)];
 	let data = {
-		response_type: 'public',
+		response_type: 'in_channel',
 		text: phrase
 	}
 	res.send(data);
@@ -93,7 +93,7 @@ app.post('/', (req, res) => {
 
 	var phrase = phrasees[Math.floor(Math.random() * phrasees.length)];
 	let data = {
-		response_type: 'public',
+		response_type: 'in_channel',
 		text: phrase
 	}
 	res.send(data);
